@@ -11,6 +11,7 @@
 %s/admin3/
 %s/admin4/
 %s/admin5/
+%s/login.php
 %s/usuarios/
 %s/usuario/
 %s/moderator/
@@ -83,7 +84,6 @@
 %s/acceso.php
 %s/bb-admin/admin.html
 %s/admin/home.html
-%s/login.php
 %s/modelsearch/login.php
 %s/moderator.php
 %s/moderator/login.php
