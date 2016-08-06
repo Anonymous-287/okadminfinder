@@ -203,6 +203,7 @@ user.%s
 %s/pma/
 %s/cms/login/
 %s/access.php
+%s/sysadm.php
 %s/adm2/
 %s/include/admin.php
 %s/admin/moderator.php
