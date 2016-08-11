@@ -2,7 +2,7 @@ OKadminFinder: Easy way to find admin panel of site
 ===================================================
 
 OKadminFinder is an Apache2 Licensed util, written in Python 2.7.*, for human who want find admin panel of site.
-In this time find tool for this work too hard. You can find .exe utils, but it dangerous.
+In this time find tool for this work too hard. You can find .exe utils, but it dangerous (not clean).
 
 OKadminFinder created for `Pentest Box <https://pentestbox.com/>`_, but it can use as alone util
 
@@ -50,7 +50,6 @@ Example: site = test.com -> %s/admin -> test.com/admin
 
 In Future
 ---------
-#. Add checking of phpinfo and phpmyadmin panel
 #. Config file with network params, like proxy, headers etc.
 #. Multithreading work, for faster work. Adding more potential admin panel pages
 #. Console work with params, like: okadminfinder -u --proxy --threads
