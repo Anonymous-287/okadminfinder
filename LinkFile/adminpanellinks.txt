@@ -271,7 +271,7 @@ user.%s
 %s/nsw/
 %s/rcjakar/
 %s/users/
-%/private.php/
+%s/private.php/
 %s/_vti_pvt/
 %s/_private/
 %s/admin1.php
