@@ -10,6 +10,12 @@ try:
                          OKadminFinderClass,
                          MessengerClass)
 
+    import urllib2
+    import socket
+    import socks
+    import sys
+    import ipgetter
+
     # Get Messenger class to print information
     messenger = MessengerClass.Messenger()
 
@@ -35,6 +41,13 @@ try:
     site = messenger.writeRawInput('Enter Site Name \n(example : example.com or www.example.com ')
 
     # Verify target url
+    socks.set_default_proxy(socks.SOCKS5, "localhost", 9050)
+    socket.socket = socks.socksocket
+    urllib2.urlopen
+
+    IP = ipgetter.myip()
+    print('Your ip address is:', IP )
+    
     if OKadminFinder.checkUrl(site):
         messenger.writeMessage('\nSite %s is stable\n' % site,'green')
     else:
