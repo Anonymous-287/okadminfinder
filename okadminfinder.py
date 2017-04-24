@@ -38,7 +38,7 @@ try:
         OKadminFinder.timeout = timeout
 
     # Get site
-    site = messenger.writeRawInput('Enter Site Name \n(example : example.com or www.example.com ')
+    site = messenger.writeRawInput('Enter Site Name \nexample : example.com or www.example.com \n$ ', 'green'); print ('')
 
     # Verify target url
     socks.set_default_proxy(socks.SOCKS5, "localhost", 9050)
@@ -46,7 +46,8 @@ try:
     urllib2.urlopen
 
     IP = ipgetter.myip()
-    print('Your ip address is:', IP )
+    messenger.writeMessage('Your IP address is:','blue'); 
+    print (IP)
     
     if OKadminFinder.checkUrl(site):
         messenger.writeMessage('\nSite %s is stable\n' % site,'green')
