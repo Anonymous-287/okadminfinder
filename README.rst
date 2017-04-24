@@ -1,12 +1,22 @@
 OKadminFinder: Easy way to find admin panel of site
 ===================================================
-
+Ps: WORK ONLY WITH TOR
+----
 OKadminFinder is an Apache2 Licensed util, written in Python 2.7.*, for human who want find admin panel of site.
 In this time find tool for this work too hard. You can find .exe utils, but it dangerous (not clean).
 
 OKadminFinder created for `Pentest Box <https://pentestbox.com/>`_, but it can use as alone util
 
 If you use it without Pentest Box, you should install library `Requests <https://github.com/kennethreitz/requests/>`_ for Python
+
+Requirements
+----
+.. code-block:: Requirements:
+    
+    pip install PySocks
+    pip install win_inet_pton
+    pip install ipgetter
+    ...
 
 Used
 ----
