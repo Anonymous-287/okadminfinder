@@ -10,36 +10,34 @@ If you use it without Pentest Box, you should install library `Requests <https:/
 
 Work ONLY with Tor:
 ----
-Windows: https://www.torproject.org/dist/torbrowser/6.5.2/tor-win32-0.2.9.10.zip
+Windows: `Tor Bundle <https://www.torproject.org/dist/torbrowser/6.5.2/tor-win32-0.2.9.10.zip/>`_
 
-Linux: apt install tor
+Linux: ``apt install tor``
 
 Requirements
 ----
 .. code-block:: Requirements:
     
-    pip install PySocks
-    pip install win_inet_pton
-    pip install ipgetter
+``pip install -r requirements.txt``
     ...
 
 Used
 ----
-in Python:
+**in Python:**
 
 .. code-block:: python
 
     >>> okadminfinder.py
     ...
 
-in Bash:
+**in Bash:**
 
 .. code-block:: bash
 
     $ python okadminfinder.py
     ...
 
-in Pentest Box (if customaliase are):
+**in Pentest Box (if customaliase are):**
 
 .. code-block:: cmd
 
@@ -68,4 +66,7 @@ In Future
 #. Config file with network params, like proxy, headers etc.
 #. Multithreading work, for faster work. Adding more potential admin panel pages
 #. Console work with params, like: okadminfinder -u --proxy --threads
+
+``Hello eveybody``
+
 
