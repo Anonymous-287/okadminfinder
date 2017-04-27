@@ -8,7 +8,11 @@ OKadminFinder created for `Pentest Box <https://pentestbox.com/>`_, but it can u
 
 If you use it without Pentest Box, you should install library `Requests <https://github.com/kennethreitz/requests/>`_ for Python
 
-Work ONLY with Tor:
+Tested in:
+----
+Pentestbox & Linux
+
+Work with Tor:
 ----
 Windows: `Tor Bundle <https://www.torproject.org/dist/torbrowser/6.5.2/tor-win32-0.2.9.10.zip/>`_
 
