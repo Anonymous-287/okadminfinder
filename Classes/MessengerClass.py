@@ -9,7 +9,7 @@ class Messenger():
     def __init__(self):
         from colorama import Fore
         # Creating styling for simple use
-        self.style = {'white': Fore.WHITE, 'red': Fore.RED, 'green': Fore.GREEN, 'yellow': Fore.YELLOW}
+        self.style = {'white': Fore.WHITE, 'red': Fore.RED, 'green': Fore.GREEN, 'yellow': Fore.YELLOW, 'blue': Fore.BLUE}
 
 
     def writeMessage(self, message, color='white'):
