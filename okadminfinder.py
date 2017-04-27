@@ -14,7 +14,8 @@ try:
     import socket
     import socks
     import sys
-    import ipgetter
+    from urllib2 import urlopen
+    from colorama import Fore, Back, Style
 
     # Get Messenger class to print information
     messenger = MessengerClass.Messenger()
@@ -33,21 +34,29 @@ try:
     OKadminFinder.header = {'user-agent': 'OKadminFinder/%s' % Credits.getCredits()[1]}
 
     # Additional params
-    if not messenger.writeRawInputWithYesNo('Do you want use default params?'):
-        timeout = messenger.writeInput('Change timeout. Please write value in seconds: ')
+    if not messenger.writeRawInputWithYesNo(Fore.YELLOW + 'Do you want use default params?'):
+        timeout = messenger.writeInput(Fore.YELLOW + 'Change timeout. Please write value in seconds: ' + Fore.GREEN)
         OKadminFinder.timeout = timeout
 
+    tor = ""
+    while (tor not in ["y","n"]):
+        tor = raw_input(Fore.YELLOW + 'Would you like to use tor? [Y][n]  $ ')
+        tor = tor.lower().strip()
+        if tor == "y":
+            socks.set_default_proxy(socks.SOCKS5, "localhost", 9050)
+            socket.socket = socks.socksocket
+            urllib2.urlopen
+        
+        elif tor == "n":
+            continue
+
+    print('')
+    my_ip = urlopen('http://ip.42.pl/raw').read()
+    messenger.writeMessage('Your IP address is:','cyan'); 
+    print (my_ip) 
+    print('')
     # Get site
-    site = messenger.writeRawInput('Enter Site Name \nexample : example.com or www.example.com \n$ ', 'green'); print ('')
-
-    # Verify target url
-    socks.set_default_proxy(socks.SOCKS5, "localhost", 9050)
-    socket.socket = socks.socksocket
-    urllib2.urlopen
-
-    IP = ipgetter.myip()
-    messenger.writeMessage('Your IP address is:','blue'); 
-    print (IP)
+    site = messenger.writeRawInput('Enter Site Name \nexample : example.com or www.example.com \n' +Fore.GREEN +'$ ', 'white'); print ('')
     
     if OKadminFinder.checkUrl(site):
         messenger.writeMessage('\nSite %s is stable\n' % site,'green')
@@ -72,7 +81,7 @@ try:
         # Test created link for HTTPerrors. If not error - potential admin panel
         if OKadminFinder.checkUrl(reqLink):
             adminCount += 1
-            messenger.writeMessage('%s %s' % ('\n\n>>> http://' + reqLink, 'Admin page found!'), 'green')
+            messenger.writeMessage('%s %s' % ('\n>>> http://' + reqLink, 'Admin page found!'), 'green')
 
             # Stopped process? and waiting for input for continue
             messenger.writeRawInput('Press enter to continue scanning.\n')
