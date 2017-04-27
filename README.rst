@@ -67,6 +67,4 @@ In Future
 #. Multithreading work, for faster work. Adding more potential admin panel pages
 #. Console work with params, like: okadminfinder -u --proxy --threads
 
-``Hello eveybody``
-
 
