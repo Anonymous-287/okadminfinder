@@ -9,7 +9,7 @@ class Messenger():
     def __init__(self):
         from colorama import Fore
         # Creating styling for simple use
-        self.style = {'white': Fore.WHITE, 'red': Fore.RED, 'green': Fore.GREEN, 'yellow': Fore.YELLOW, 'blue': Fore.BLUE}
+        self.style = {'white': Fore.WHITE, 'red': Fore.RED, 'green': Fore.GREEN, 'yellow': Fore.YELLOW, 'blue': Fore.BLUE, 'cyan': Fore.CYAN}
 
 
     def writeMessage(self, message, color='white'):
@@ -56,7 +56,7 @@ class Messenger():
         :param color: string
         :return: input
         """
-        valueOfInput = self.writeRawInput('%s [Y][n]' % message, color)
+        valueOfInput = self.writeRawInput('%s [Y][n]  $ ' % message, color)
         if valueOfInput == '' or valueOfInput == 'y' or valueOfInput == 'Y':
             return True
         elif valueOfInput == 'n' or valueOfInput == 'N':
