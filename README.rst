@@ -53,7 +53,7 @@ After that, you must add custom alias.
 
 #. (If you don't have customaliases file) Create a file with name customaliases and place it in PentestBox Directory/bin. Please note file should not have any extension and make sure encoding is ANSI
 
-#. Write to this file: okadminfinder=python "%pentestbox_ROOT%\bin\WebApplications\okadminfinder\okadminfinder.py" $*
+#. Write to this file: okadminfinder=python "%pentestbox_ROOT%\\bin\\Path\\to\\okadminfinder\\okadminfinder.py" $*
 
 
 Extensions
