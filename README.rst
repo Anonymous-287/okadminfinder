@@ -48,7 +48,7 @@ Used
     C:/PentestBoxDir okadminfinder
     ...
 
-If you wanna use that util in `Pentest Box <https://pentestbox.com/>`_, place this files to directory PentestBox Directory\bin\WebApplications\okadminfinder
+If you wanna use that util in `Pentest Box <https://pentestbox.com/>`_, place this files to directory PentestBox Directory\\bin\\path\\to\\okadminfinder
 After that, you must add custom alias.
 
 #. (If you don't have customaliases file) Create a file with name customaliases and place it in PentestBox Directory/bin. Please note file should not have any extension and make sure encoding is ANSI
