@@ -4,7 +4,7 @@
 try:
     # Change main dir to this (need for Pentest Box)
     import os
-    os.chdir(os.path.dirname(__file__))
+    os.path.abspath(__file__)
 
     from Classes import (Credits,
                          OKadminFinderClass,
