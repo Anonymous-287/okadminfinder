@@ -1,3 +1,7 @@
+OKadminfinder IS NO LONGER MAINTAINED, please check `OKadminfinder3 <https://github.com/Ghostboy-287/okadminfinder3/>`_
+==================================================================================================================
+
+
 OKadminFinder: Easy way to find admin panel of site
 ===================================================
 
